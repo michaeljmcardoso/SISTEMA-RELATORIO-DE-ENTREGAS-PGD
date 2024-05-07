@@ -1,7 +1,5 @@
 # Sistema de Relatório de Entregas PGD
 
-""" O presente projeto se trata de um Sistema de Entrega de Relatorios, desenvolvido para facilitar o preenchimento dos relatórios mensais dos servidores vinculados ao Programa de Gestao de Desempenho-PGD do governo federal. """
-
 import sqlite3
 import PySimpleGUI as sg
 import pandas as pd
@@ -373,13 +371,13 @@ def extrairPlanilha():
             registros, 
             columns=[
                 'ID',
-                '   Macro_atividades   ',
-                'Atividades_detalhadas',
-                'Horas',
-                'Regime ',
-                '     Entregas    ',
-                'Nota',
-                'Horas_executadas'
+                'Macro atividades',
+                'Atividades detalhadas',
+                'Faixa de complexidade (horas)',
+                'Regime de execução',
+                'Entregas',
+                'Avaliação (nota de 0 a 10)',
+                'Horas executadas'
                 ]
             )
         
