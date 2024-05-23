@@ -74,13 +74,14 @@ atividades_detalhadas = [
     'Elaboração_Introdução_Relatório_Antropológico',
     'Elaboração_Capítulo_Dados_Gerais',
     'Elaboração_Conclusão_do_RA',
-    'Elaboração de briefing',
+    'Elaboração_de_Briefing',
     'Estudo_de_Literatura_e_Legislação',
     'GE_Temática_Quilombola',
     'Levantamento_de_Referencial_Teórico',
     'Levantamento_de_Informações_Dados_Gerais',
     'Participação_em_Cursos_e_Palestras',
     'Participação_Audiência_Judicial',
+    'Relatório',
     'Redação_Capítulo_Histórico_Ocupacional',
     'Redação_Capítulo_Organização_Social',
     'Redação_Capítulo_Ambiente_e_Produção',
@@ -181,7 +182,7 @@ layout = [
     ]
 ]
 
-janela = sg.Window('SISPGD - Sistema de Relatório de Entregas/PGD/F-4', layout, resizable=True)
+janela = sg.Window('SISPGD - Sistema de Relatório de Entregas/PGD/F-4/MICHAEL JM CARDOSO', layout, resizable=True)
 
 def inserirDados(values):
     macroAtividades = values['-MACRO-']
@@ -396,7 +397,7 @@ def somarHorasExecutadas():
 
         sg.popup(f'Horas Executadas: {totalHorasExecutadas} horas', title='Total de Horas')
     else:
-        sg.popup('Não Há registros para exibir.', title='Erro')
+        sg.popup('Não há registros para exibir.', title='Erro')
 
  # Loop principal para capturar eventos da janela
 while True:
