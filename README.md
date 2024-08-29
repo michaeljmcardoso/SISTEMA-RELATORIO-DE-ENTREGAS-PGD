@@ -1,6 +1,6 @@
 # Sistema de Relatório de Entregas PGD - SISPGD
 
-O Sistema de Relatório de Entregas PGD é uma aplicação desenvolvida para facilitar o preenchimento dos relatórios mensais dos servidores do Incra, vinculados ao Programa de Gestão de Desempenho (PGD) do governo federal. Com uma interface intuitiva e funcionalidades específicas, o sistema visa agilizar o processo de registro de atividades, permitindo aos usuários preencher seus relatórios de forma rápida e eficiente,  permitindo que as pessoas poupem tempo e energia nessa tarefa, por vezes repetitiva.
+O Sistema de Relatório de Entregas PGD é uma aplicação desenvolvida para facilitar o preenchimento dos relatórios mensais dos servidores do Incra, vinculados ao Programa de Gestão de Desempenho (PGD) do governo federal. Com uma interface intuitiva e funcionalidades específicas, o sistema visa agilizar o processo de registro de atividades, permitindo aos usuários preencher seus relatórios de forma rápida e eficiente, poupando tempo e energia em uma tarefa, por vezes repetitiva.
 
 Nota: O projeto SISPGD é uma inciativa pessoal e não se trata de um sistema oficial da instituição.
 
@@ -14,7 +14,7 @@ Exportação de Relatórios: É possível baixar os relatórios preenchidos no f
 
 Totalização de Horas Executadas: O sistema também oferece a funcionalidade de somar as horas executadas, fornecendo assim um total acumulado das horas dedicadas às atividades registradas.
 
-Assista aos tutorias no canal do youtube pelos links:
+**Assista aos tutorias no [canal do youtube](https://youtube.com/@michaelcardoso8705?si=2VLCIRmNTN9ghy_5) pelos links:**
 1. Como preencher o Relatório no SISPGD = https://youtu.be/lGKgxgJiahI?si=QYg7cUgSs3WPdqH1
 2. Como baixar o Relatório no SISPGD = https://youtu.be/nLzurA2Awxc?si=VhUdLJUK9DLuGXIi
 3. Como exportar o Relatório preenchido no SISPGD para o Relatório SEI = https://youtu.be/APRf1qM3t3I?si=5fUzGf7MZfKT9Lz_
