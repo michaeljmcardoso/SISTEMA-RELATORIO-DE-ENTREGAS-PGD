@@ -1,12 +1,12 @@
 import PySimpleGUI as sg
 import pandas as pd
 import tkinter as tk
-import funcoes_registro
-import constantes
+from funcoes_registro import conectar_banco_de_dados
+from constantes import FONTE
 from tkinter import filedialog
 
-def planilha(registros):
-    conn = funcoes_registro.conectar_banco_de_dados()
+def salvar_planilha(registros):
+    conn = conectar_banco_de_dados()
     if conn is not None:
         cursor = conn.cursor()
 
@@ -35,8 +35,8 @@ def planilha(registros):
 
         if file_path:
             df.to_excel(file_path, index=False)
-            sg.popup('Relatório extraído com sucesso!', title='Sucesso', font=constantes.FONTE)
+            sg.popup('Relatório extraído com sucesso!', title='Sucesso', font=FONTE)
         else:
-            sg.popup('Nenhum arquivo selecionado. O relatório não foi salvo.', title='Aviso', font=constantes.FONTE)
+            sg.popup('Nenhum arquivo selecionado. O relatório não foi salvo.', title='Aviso', font=FONTE)
     else:
-        sg.popup('Não há registros para extrair.', title='Erro', font=constantes.FONTE)
+        sg.popup('Não há registros para extrair.', title='Erro', font=FONTE)

@@ -1,6 +1,5 @@
 import PySimpleGUI as sg
 import sqlite3
-import funcoes_registro
 import constantes
 
 
@@ -73,9 +72,9 @@ def inserir_dados(values, janela):
     janela['-MACRO-'].update('')
     janela['-DETALHADA-'].update('')
     janela['-HORAS-'].update('')
-    janela['-REGIME-'].update('')
+    janela['-REGIME-'].update('Presencial')
     janela['-ENTREGAS-'].update('')
-    janela['-NOTAS-'].update('')
+    janela['-NOTAS-'].update('10')
     janela['-EXECUTADAS-'].update('')
     
     cursor.close()
@@ -205,7 +204,7 @@ def excluir_registro(janela):
             selected_row_values = janela['-TABLE-'].get()[selected_rows[0]] # Obter o ID do registro selecionado na tabela
             registro_id = selected_row_values[0]  # O ID está na primeira coluna da tabela
             
-            conn = funcoes_registro.conectar_banco_de_dados()
+            conn = conectar_banco_de_dados()
             cursor = conn.cursor()
 
             cursor.execute("DELETE FROM RELATORIO WHERE ID = ?", (registro_id,)) # Query para excluir o registro com base no ID

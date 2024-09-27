@@ -1,8 +1,8 @@
 import PySimpleGUI as sg
-import funcoes_registro
+from funcoes_registro import inserir_dados, consultar_registros, alterar_registro, excluir_registro
 import constantes
-import salvar
-import somar
+from salvar import salvar_planilha
+from somar import somar_horas_executadas
 
 class Aplicacao:
     def __init__(self):
@@ -16,23 +16,23 @@ class Aplicacao:
                 break
 
             elif event == 'INSERIR':
-                funcoes_registro.inserir_dados(values, self.janela)
-                funcoes_registro.consultar_registros(self.janela)
+                inserir_dados(values, self.janela)
+                consultar_registros(self.janela)
 
             elif event == 'CONSULTAR':
-                funcoes_registro.consultar_registros(self.janela)
+                consultar_registros(self.janela)
 
             elif event == 'ALTERAR':
-                funcoes_registro.alterar_registro(self.janela)
+                alterar_registro(self.janela)
 
             elif event == 'BAIXAR RELATÓRIO':
-                salvar.planilha(self.janela)
+                salvar_planilha(self.janela)
 
             elif event == 'EXCLUIR':
-                funcoes_registro.excluir_registro(self.janela)
+                excluir_registro(self.janela)
 
             elif event == 'HORAS EXECUTADAS':
-                somar.horas_executadas()
+                somar_horas_executadas()
 
 
     def criar_janela(self):
@@ -79,7 +79,7 @@ class Aplicacao:
                         [sg.Table(
                             values=[],
                             headings=[
-                                'ID',
+                                'ID ',
                                 '   Macro_atividades   ',
                                 'Atividades_detalhadas',
                                 'Horas',
