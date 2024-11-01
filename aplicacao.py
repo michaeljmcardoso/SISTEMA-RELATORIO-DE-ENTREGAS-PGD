@@ -80,11 +80,11 @@ class Aplicacao:
                             values=[],
                             headings=[
                                 'ID ',
-                                '   Macro_atividades   ',
-                                'Atividades_detalhadas',
+                                '    Macro_atividades    ',
+                                ' Atividades_detalhadas ',
                                 'Horas',
-                                'Regime ',
-                                '   Entregas   ',
+                                '  Regime  ',
+                                '        Entregas        ',
                                 'Nota',
                                 'H_Executadas'
                             ], 
@@ -94,10 +94,15 @@ class Aplicacao:
                             vertical_scroll_only=False,
                             justification='left',
                             auto_size_columns=True,
+                            header_text_color='white',
+                            header_background_color='blue',
+                            sbar_background_color='green',
+                            header_font='Any 10 bold',
+                            header_border_width=(2),
                         )]
                     ], 
                     
-                    vertical_alignment='left', element_justification='left', size=(1150, 630))
+                    vertical_alignment='left', element_justification='left', size=(1150, 630) )
                 ],
 
                 [sg.Text('', size=(75, 1)), constantes.JANELA_RODAPE]
